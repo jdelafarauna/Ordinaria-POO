@@ -6,9 +6,11 @@ public class Principal {
         imp.recibir(new DocTxt("Dos", true, "doc2", 1, true, 10));
         imp.recibir(new DocTxt("Tres", true, "doc3", 1, true, 5));
         imp.recibir(new Fotografia(12,12,"foto",1,false, 3));
+        System.out.println("Imprimir con prioridad");
         imp.imprimir();
-
-        //imp.hacerBackUp(BCK);
-        //imp.imprimirSinPrioridad();
+        System.out.println("Hacer backUp");
+        imp.hacerBackUp(BCK);
+        System.out.println("Imprimir sin prioridad");
+        imp.imprimirSinPrioridad();
     }
 }
