@@ -32,9 +32,11 @@ public class Impresora {
             for(Imprimible imprimible : lista){
                 oos.writeObject(imprimible);
             }
+            oos.close();
         }catch(IOException e){
             System.out.println(e.getMessage());
         }
+
 
     }
 
